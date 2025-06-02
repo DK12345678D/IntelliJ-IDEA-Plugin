@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin> <id>org.example.kotlintodoplugin</id>
+    <name>Kotlin TODO Highlighter</name>
+    <vendor email="dinkarprasad682@gmail.com">Dinkar</vendor>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="kotlin" implementationClass="org.example.KotlinTodoAnnotator"/>
+        <toolWindow id="Kotlin TODOs" anchor="right" factoryClass="org.example.TodoToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
